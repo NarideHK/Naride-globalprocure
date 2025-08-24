@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* 這裡也可以放你自己的自訂樣式 */
 body {
   font-family: "Noto Sans JP", sans-serif;
 }
