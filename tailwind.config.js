@@ -2,18 +2,14 @@
 export default {
   content: [
     "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",  // ✅ 必須加上 src
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+  safelist: [
+    "bg-red-500", "bg-blue-600", "text-white", "text-gray-800",
+    "p-4", "p-6", "m-4", "rounded-xl", "shadow-lg"
   ],
   theme: {
-    extend: {
-      colors: {
-        brand: {
-          DEFAULT: "#2563eb", // 藍色
-          light: "#60a5fa",
-          dark: "#1e40af",
-        },
-      },
-    },
+    extend: {},
   },
   plugins: [],
-}
+};

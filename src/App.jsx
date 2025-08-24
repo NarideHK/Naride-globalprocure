@@ -1,15 +1,3 @@
-import React from "react";
-import Header from "./components/Header";
-import Hero from "./components/Hero";
-import Features from "./components/Features";
-import Services from "./components/Services";
-import DigitalTools from "./components/DigitalTools";
-import GlobalNetwork from "./components/GlobalNetwork";
-import Quality from "./components/Quality";
-import FAQ from "./components/FAQ";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
-
 function App() {
   return (
     <div className="font-sans">
@@ -27,4 +15,4 @@ function App() {
   );
 }
 
-export default App;
+export default App;   // ✅ 這行一定要存在
