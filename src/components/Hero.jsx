@@ -1,24 +1,41 @@
 import React from "react";
-import { ArrowRight } from "lucide-react";
 
-export default function Hero() {
+const Hero = () => {
   return (
-    <section className="relative bg-gradient-to-r from-blue-700 to-blue-500 text-white py-28">
-      <div className="max-w-7xl mx-auto px-6 text-center">
-        <h2 className="text-4xl md:text-5xl font-bold mb-6">
-          Naride-globalprocure
-        </h2>
-        <p className="max-w-2xl mx-auto text-lg mb-8">
-          專注於協助日本客戶採購 <br />
-          停產零部件・國內調達困難物料・少批量調達困難物料
-        </p>
-        <a
-          href="#contact"
-          className="inline-flex items-center px-6 py-3 bg-white text-blue-700 font-semibold rounded-xl shadow hover:bg-gray-100"
-        >
-          聯絡我們 <ArrowRight className="ml-2 w-5 h-5" />
-        </a>
+    <section className="bg-gradient-to-r from-brand to-brand-dark text-white">
+      <div className="max-w-7xl mx-auto px-6 py-20 flex flex-col md:flex-row items-center">
+        {/* 左側文字 */}
+        <div className="flex-1 mb-10 md:mb-0">
+          <h2 className="text-4xl md:text-5xl font-bold leading-tight mb-6">
+            全球停產零部件採購 <br />  
+            Naride-globalprocure 助你一站解決
+          </h2>
+          <p className="text-lg text-blue-100 mb-8">
+            協助企業解決日本國內採購困難、少批量零件調達問題，  
+            提供語言翻譯、支付、物流、售後與品質管理等全方位服務。
+          </p>
+
+          <div className="flex gap-4">
+            <a href="#services" className="btn btn-secondary">
+              了解服務
+            </a>
+            <a href="#contact" className="btn btn-primary">
+              聯絡我們
+            </a>
+          </div>
+        </div>
+
+        {/* 右側圖片（暫時用一張代表性圖，可換成你的） */}
+        <div className="flex-1 flex justify-center">
+          <img
+            src="https://via.placeholder.com/400x300.png?text=Global+Procurement"
+            alt="Global Procurement"
+            className="rounded-2xl shadow-lg"
+          />
+        </div>
       </div>
     </section>
   );
-}
+};
+
+export default Hero;

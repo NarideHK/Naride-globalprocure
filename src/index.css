@@ -2,6 +2,36 @@
 @tailwind components;
 @tailwind utilities;
 
+/* ✅ 全域樣式，可以加字型、背景色 */
 body {
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "Noto Sans JP", "Helvetica Neue", Arial, sans-serif;
+  background-color: #f9fafb; /* 淺灰背景 */
+  color: #111827; /* Tailwind gray-900 */
+  line-height: 1.6;
+}
+
+/* ✅ 標題樣式 */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  color: #1f2937; /* gray-800 */
+}
+
+/* ✅ 連結樣式 */
+a {
+  color: #2563eb; /* blue-600 */
+  text-decoration: none;
+}
+a:hover {
+  color: #1d4ed8; /* blue-700 */
+}
+
+/* ✅ 簡單的按鈕效果 */
+.btn {
+  @apply px-6 py-2 rounded-2xl font-semibold transition;
+}
+.btn-primary {
+  @apply bg-blue-600 text-white hover:bg-blue-700;
+}
+.btn-secondary {
+  @apply bg-gray-200 text-gray-800 hover:bg-gray-300;
 }
