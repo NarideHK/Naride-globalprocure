@@ -1,10 +1,15 @@
+import React from "react";
+
 export default function Services() {
   return (
-    <section id="services" className="py-16">
-      <div className="max-w-6xl mx-auto text-center">
-        <h3 className="text-3xl font-bold mb-8">數位化服務</h3>
-        <p className="max-w-3xl mx-auto mb-6">
-          從詢盤、報價、處理訂單到環境資料、不良分析，Naride-globalprocure 提供自動化解決方案，大幅縮短採購流程週期。
+    <section id="services" className="py-20">
+      <div className="max-w-6xl mx-auto px-6">
+        <h3 className="text-3xl font-bold text-center text-blue-700 mb-12">
+          提供的服務
+        </h3>
+        <p className="text-lg text-center text-gray-700">
+          我們透過數位工具支援詢盤、報價、訂單處理、環境資料、不良分析等各類售後服務，
+          協助客戶提升採購效率，降低成本。
         </p>
       </div>
     </section>

@@ -1,32 +1,24 @@
-import { motion } from "framer-motion";
+import React from "react";
+import { ArrowRight } from "lucide-react";
 
 export default function Hero() {
   return (
-    <section className="bg-gradient-to-r from-blue-700 to-blue-500 text-white py-20 text-center">
-      <motion.h2
-        initial={{ opacity: 0, y: 50 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.7 }}
-        className="text-4xl font-bold mb-4"
-      >
-        全球停產零件與困難採購的數位解決方案
-      </motion.h2>
-      <motion.p
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 0.5, duration: 0.7 }}
-        className="max-w-3xl mx-auto mb-6"
-      >
-        Naride-globalprocure 以數位化工具，協助日本企業處理停產零部件、日本國內調達困難物料、少批量調達困難物料，並提供全流程效率提升。
-      </motion.p>
-      <motion.a
-        whileHover={{ scale: 1.05 }}
-        whileTap={{ scale: 0.95 }}
-        href="#contact"
-        className="bg-white text-blue-700 px-6 py-3 rounded-lg shadow"
-      >
-        聯絡我們
-      </motion.a>
+    <section className="relative bg-gradient-to-r from-blue-700 to-blue-500 text-white py-28">
+      <div className="max-w-7xl mx-auto px-6 text-center">
+        <h2 className="text-4xl md:text-5xl font-bold mb-6">
+          Naride-globalprocure
+        </h2>
+        <p className="max-w-2xl mx-auto text-lg mb-8">
+          專注於協助日本客戶採購 <br />
+          停產零部件・國內調達困難物料・少批量調達困難物料
+        </p>
+        <a
+          href="#contact"
+          className="inline-flex items-center px-6 py-3 bg-white text-blue-700 font-semibold rounded-xl shadow hover:bg-gray-100"
+        >
+          聯絡我們 <ArrowRight className="ml-2 w-5 h-5" />
+        </a>
+      </div>
     </section>
   );
 }
